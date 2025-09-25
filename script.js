@@ -10,25 +10,28 @@ function normalizePostalCode(code) {
 
 // Funkcja sprawdzająca, czy kod pocztowy pasuje do prefixu lub zakresu
 function isPostalCodeInDistrict(code, kody_pocztowe) {
-    const normalized = code.replace(/\s|-/g, '').toUpperCase();
+    // Zamień kod na format bez spacji i wielkie litery
+    const normalized = code.replace(/\s/g, '').toUpperCase();
 
-    // Sprawdź prefixy
+    // Sprawdź prefixy (porównaj pierwsze dwie cyfry kodu)
     if (Array.isArray(kody_pocztowe.prefixy)) {
+        const codePrefix = normalized.substring(0, 2);
         for (const prefix of kody_pocztowe.prefixy) {
-            if (normalized.startsWith(prefix.replace('-', ''))) {
+            if (codePrefix === prefix) {
                 return true;
             }
         }
     }
 
-    // Sprawdź zakresy
+    // Sprawdź zakresy (porównaj pełny kod XX-XXX)
     if (Array.isArray(kody_pocztowe.zakresy)) {
+        // Zamień kod na format XX-XXX (jeśli wpisano bez myślnika)
+        let formattedCode = normalized;
+        if (formattedCode.length === 5 && !formattedCode.includes('-')) {
+            formattedCode = formattedCode.substring(0,2) + '-' + formattedCode.substring(2);
+        }
         for (const zakres of kody_pocztowe.zakresy) {
-            // Zamień na liczby do porównania
-            const od = zakres.od.replace(/\D/g, '');
-            const do_ = zakres.do.replace(/\D/g, '');
-            const kodNum = normalized.replace(/\D/g, '');
-            if (kodNum >= od && kodNum <= do_) {
+            if (formattedCode >= zakres.od && formattedCode <= zakres.do) {
                 return true;
             }
         }
