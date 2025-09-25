@@ -1,0 +1,431 @@
+{
+  "01": {
+    "okreg": "Legnica I",
+    "kody_pocztowe": ["59-220", "59-225", "59-230", "59-240", "59-300", "59-400", "59-500", "59-600", "59-700", "59-800", "59-900", "60-001", "60-002"],
+    "poslowie": [
+    {"imie": "Robert", "nazwisko": "Obaz", "partia": "KO"},
+      {"imie": "Krzysztof", "nazwisko": "Mieszkowski", "partia": "KO"},
+      {"imie": "Michał", "nazwisko": "Dworczyk", "partia": "PiS"},
+      {"imie": "Arkadiusz", "nazwisko": "Czartoryski", "partia": "PiS"},
+      {"imie": "Marek", "nazwisko": "Ast", "partia": "PiS"}
+    ]
+  },
+  "02": {
+    "okreg": "Wałbrzych II",
+    "kody_pocztowe": ["57-200", "57-300", "57-400", "57-500", "58-100", "58-200", "58-300", "58-400", "58-500", "58-540", "58-560"],
+    "poslowie": [
+      {"imie": "Michał", "nazwisko": "Jaros", "partia": "KO"},
+      {"imie": "Joanna", "nazwisko": "Borowiak", "partia": "KO"},
+      {"imie": "Jacek", "nazwisko": "Żalek", "partia": "PiS"},
+      {"imie": "Zbigniew", "nazwisko": "Dolata", "partia": "PiS"},
+      {"imie": "Marek", "nazwisko": "Wesoły", "partia": "PiS"}
+    ]
+  },
+  "03": {
+    "okreg": "Wrocław I",
+    "kody_pocztowe": ["50-001", "50-002", "50-003", "50-004", "50-005", "50-006", "50-007", "50-008", "50-009", "50-010", "50-011"],
+    "poslowie": [
+      {"imie": "Klaudia", "nazwisko": "Jachira", "partia": "KO"},
+      {"imie": "Agnieszka", "nazwisko": "Pomaska", "partia": "KO"},
+      {"imie": "Michał", "nazwisko": "Szczerba", "partia": "KO"},
+      {"imie": "Tomasz", "nazwisko": "Zimoch", "partia": "KO"},
+      {"imie": "Paweł", "nazwisko": "Hreniak", "partia": "PiS"}
+    ]
+  },
+  "04": {
+    "okreg": "Bydgoszcz I",
+    "kody_pocztowe": ["85-001", "85-002", "85-003", "85-004", "85-005", "85-006", "85-007", "85-008", "85-009", "85-010", "85-011"],
+    "poslowie": [
+      {"imie": "Tomasz", "nazwisko": "Zimoch", "partia": "KO"},
+      {"imie": "Dariusz", "nazwisko": "Joński", "partia": "KO"},
+      {"imie": "Jacek", "nazwisko": "Bogucki", "partia": "PiS"},
+      {"imie": "Artur", "nazwisko": "Szałabawka", "partia": "PiS"},
+      {"imie": "Przemysław", "nazwisko": "Drabek", "partia": "KO"}
+    ]
+  },
+  "05": {
+    "okreg": "Toruń II",
+    "kody_pocztowe": ["87-100", "87-101", "87-102", "87-103", "87-104", "87-105", "87-106", "87-107", "87-108", "87-109", "87-110"],
+    "poslowie": [
+      {"imie": "Cezary", "nazwisko": "Tomczyk", "partia": "KO"},
+      {"imie": "Joanna", "nazwisko": "Kopcińska", "partia": "PiS"},
+      {"imie": "Adam", "nazwisko": "Andruszkiewicz", "partia": "PiS"},
+      {"imie": "Łukasz", "nazwisko": "Schreiber", "partia": "PiS"},
+      {"imie": "Piotr", "nazwisko": "Müller", "partia": "PiS"}
+    ]
+  },
+  "06": {
+    "okreg": "Lublin I",
+    "kody_pocztowe": ["20-001", "20-002", "20-003", "20-004", "20-005", "20-006", "20-007", "20-008", "20-009", "20-010", "20-011"],
+    "poslowie": [
+      {"imie": "Krzysztof", "nazwisko": "Grabczuk", "partia": "KO"},
+      {"imie": "Michał", "nazwisko": "Kołodziejczak", "partia": "PSL"},
+      {"imie": "Przemysław", "nazwisko": "Czarnek", "partia": "PiS"},
+      {"imie": "Sylwia", "nazwisko": "Spurek", "partia": "Lewica"},
+      {"imie": "Grzegorz", "nazwisko": "Braun", "partia": "Konfederacja"}
+    ]
+  },
+  "07": {
+    "okreg": "Chełm II",
+    "kody_pocztowe": ["22-100", "22-200", "22-300", "22-400", "22-500", "22-600", "23-100", "23-200", "23-300", "23-400"],
+    "poslowie": [
+      {"imie": "Krzysztof", "nazwisko": "Hetman", "partia": "PSL"},
+      {"imie": "Mieczysław", "nazwisko": "Golba", "partia": "PiS"},
+      {"imie": "Anna", "nazwisko": "Siarkowska", "partia": "PiS"},
+      {"imie": "Dariusz", "nazwisko": "Stefaniuk", "partia": "PiS"}
+    ]
+  },
+  "08": {
+    "okreg": "Zielona Góra I",
+    "kody_pocztowe": ["65-001", "65-002", "65-003", "65-004", "65-005", "65-006", "65-007", "65-008", "65-009", "65-010", "65-011"],
+    "poslowie": [
+      {"imie": "Krzysztof", "nazwisko": "Brejza", "partia": "KO"},
+      {"imie": "Maciej", "nazwisko": "Wróbel", "partia": "KO"},
+      {"imie": "Dariusz", "nazwisko": "Klimczak", "partia": "PiS"},
+      {"imie": "Sebastian", "nazwisko": "Kaleta", "partia": "PiS"},
+      {"imie": "Mariusz", "nazwisko": "Kaminski", "partia": "PiS"}
+    ]
+  },
+  "09": {
+    "okreg": "Łódź I",
+    "kody_pocztowe": ["90-001", "90-002", "90-003", "90-004", "90-005", "90-006", "90-007", "90-008", "90-009", "90-010", "90-011"],
+    "poslowie": [
+      {"imie": "Cezary", "nazwisko": "Grabarczyk", "partia": "KO"},
+      {"imie": "Monika", "nazwisko": "Rosa", "partia": "KO"},
+      {"imie": "Waldemar", "nazwisko": "Buda", "partia": "PiS"},
+      {"imie": "Michał", "nazwisko": "Moskal", "partia": "PiS"},
+      {"imie": "Marcin", "nazwisko": "Ociepa", "partia": "KO"}
+    ]
+  },
+  "10": {
+    "okreg": "Piotrków Trybunalski II",
+    "kody_pocztowe": ["97-200", "97-300", "97-400", "97-500", "98-100", "98-200", "98-300", "98-400", "99-100", "99-200"],
+    "poslowie": [
+      {"imie": "Sławomir", "nazwisko": "Nitras", "partia": "KO"},
+      {"imie": "Dariusz", "nazwisko": "Joński", "partia": "KO"},
+      {"imie": "Jacek", "nazwisko": "Bogucki", "partia": "PiS"},
+      {"imie": "Anna", "nazwisko": "Milczanowska", "partia": "PiS"}
+    ]
+  },
+  "11": {
+    "okreg": "Sieradz III",
+    "kody_pocztowe": ["98-200", "98-300", "98-400", "99-100", "99-200", "99-300", "99-400", "62-800", "62-900"],
+    "poslowie": [
+      {"imie": "Marek", "nazwisko": "Biernacki", "partia": "KO"},
+      {"imie": "Adam", "nazwisko": "Szłapka", "partia": "KO"},
+      {"imie": "Marek", "nazwisko": "Suski", "partia": "PiS"},
+      {"imie": "Michał", "nazwisko": "Woś", "partia": "PiS"}
+    ]
+  },
+  "12": {
+    "okreg": "Chrzastowice IV",
+    "kody_pocztowe": ["42-200", "42-300", "42-400", "42-500", "42-600", "42-700", "42-800", "42-900", "43-100"],
+    "poslowie": [
+      {"imie": "Gabriela", "nazwisko": "Lenartowicz", "partia": "KO"},
+      {"imie": "Wiesław", "nazwisko": "Janczyk", "partia": "PiS"},
+      {"imie": "Anita", "nazwisko": "Czerwińska", "partia": "PiS"},
+      {"imie": "Barbara", "nazwisko": "Bartuś", "partia": "PiS"}
+    ]
+  },
+  "13": {
+    "okreg": "Kraków I",
+    "kody_pocztowe": ["30-001", "30-002", "30-003", "30-004", "30-005", "30-006", "30-007", "30-008", "30-009", "30-010", "30-011"],
+    "poslowie": [
+      {"imie": "Franciszek", "nazwisko": "Sterczewski", "partia": "KO"},
+      {"imie": "Izabela", "nazwisko": "Leszczyna", "partia": "KO"},
+      {"imie": "Bogdan", "nazwisko": "Rzońca", "partia": "PiS"},
+      {"imie": "Anna", "nazwisko": "Paluch", "partia": "PiS"},
+      {"imie": "Michał", "nazwisko": "Urbaniak", "partia": "KO"}
+    ]
+  },
+  "14": {
+    "okreg": "Nowy Sącz II",
+    "kody_pocztowe": ["33-300", "33-100", "33-200", "33-340", "33-380", "34-100", "34-200", "34-300", "34-400", "34-500"],
+    "poslowie": [
+      {"imie": "Marek", "nazwisko": "Sowa", "partia": "KO"},
+      {"imie": "Józefa", "nazwisko": "Hrynkiewicz", "partia": "PiS"},
+      {"imie": "Anna", "nazwisko": "Kwiecień", "partia": "PiS"},
+      {"imie": "Marek", "nazwisko": "Kuchciński", "partia": "PiS"}
+    ]
+  },
+  "15": {
+    "okreg": "Tarnów III",
+    "kody_pocztowe": ["33-100", "33-101", "33-102", "33-103", "33-104", "33-105", "33-106", "33-107", "33-108", "33-109"],
+    "poslowie": [
+      {"imie": "Urszula", "nazwisko": "Augustyn", "partia": "KO"},
+      {"imie": "Dominik", "nazwisko": "Tarczyński", "partia": "PiS"},
+      {"imie": "Anna", "nazwisko": "Zalewska", "partia": "PiS"},
+      {"imie": "Małgorzata", "nazwisko": "Wassermann", "partia": "PiS"}
+    ]
+  },
+  "16": {
+    "okreg": "Płock I",
+    "kody_pocztowe": ["09-400", "09-500", "10-100", "10-200", "10-300", "10-400", "10-500", "10-600", "10-700", "10-800"],
+    "poslowie": [
+      {"imie": "Sławomir", "nazwisko": "Neumann", "partia": "KO"},
+      {"imie": "Tomasz", "nazwisko": "Latos", "partia": "PiS"},
+      {"imie": "Zbigniew", "nazwisko": "Babalski", "partia": "PiS"},
+      {"imie": "Mariusz", "nazwisko": "Błaszczak", "partia": "PiS"}
+    ]
+  },
+  "17": {
+    "okreg": "Radom II",
+    "kody_pocztowe": ["26-600", "26-700", "26-800", "26-900", "27-200", "27-300", "27-400", "27-500", "27-600"],
+    "poslowie": [
+      {"imie": "Dariusz", "nazwisko": "Rosołowski", "partia": "PiS"},
+      {"imie": "Jarosław", "nazwisko": "Sachajko", "partia": "Kukiz'15"},
+      {"imie": "Daniel", "nazwisko": "Milewski", "partia": "PiS"},
+      {"imie": "Kazimierz", "nazwisko": "Smoliński", "partia": "PiS"}
+    ]
+  },
+  "18": {
+    "okreg": "Siedlce III",
+    "kody_pocztowe": ["08-110", "08-400", "08-500", "21-500", "21-540", "21-560", "21-580", "08-200", "08-300"],
+    "poslowie": [
+      {"imie": "Zbigniew", "nazwisko": "Gryglas", "partia": "KO"},
+      {"imie": "Stanisław", "nazwisko": "Pięta", "partia": "PiS"},
+      {"imie": "Jarosław", "nazwisko": "Zieliński", "partia": "PiS"},
+      {"imie": "Daniel", "nazwisko": "Obajtek", "partia": "PiS"}
+    ]
+  },
+  "19": {
+    "okreg": "Warszawa I",
+    "kody_pocztowe": ["00-001", "00-002", "00-003", "00-004", "00-005", "00-006", "00-007", "00-501", "00-502", "00-503", "00-504"],
+    "poslowie": [
+      {"imie": "Elżbieta", "nazwisko": "Witek", "partia": "PiS"},
+      {"imie": "Marzena", "nazwisko": "Machatek", "partia": "PiS"},
+      {"imie": "Rafał", "nazwisko": "Trzaskowski", "partia": "KO"},
+      {"imie": "Barbara", "nazwisko": "Nowacka", "partia": "KO"},
+      {"imie": "Marcin", "nazwisko": "Kierwiński", "partia": "KO"},
+      {"imie": "Kamila", "nazwisko": "Gasiuk-Pihowicz", "partia": "KO"},
+      {"imie": "Borys", "nazwisko": "Budka", "partia": "KO"},
+      {"imie": "Krzysztof", "nazwisko": "Brejza", "partia": "KO"},
+      {"imie": "Dariusz", "nazwisko": "Joński", "partia": "KO"},
+      {"imie": "Tomasz", "nazwisko": "Siemoniak", "partia": "KO"},
+      {"imie": "Cezary", "nazwisko": "Tomczyk", "partia": "KO"},
+      {"imie": "Michał", "nazwisko": "Szczerba", "partia": "KO"},
+      {"imie": "Sławomir", "nazwisko": "Nitras", "partia": "KO"}
+    ]
+  },
+  "20": {
+    "okreg": "Warszawa II",
+    "kody_pocztowe": ["02-001", "02-002", "02-003", "02-004", "02-005", "02-006", "02-007", "02-008", "02-009", "02-010", "02-011"],
+    "poslowie": [
+      {"imie": "Rafał", "nazwisko": "Bochenek", "partia": "PiS"},
+      {"imie": "Jacek", "nazwisko": "Ozdoba", "partia": "PiS"},
+      {"imie": "Paweł", "nazwisko": "Szefernaker", "partia": "PiS"},
+      {"imie": "Mariusz", "nazwisko": "Gosek", "partia": "KO"},
+      {"imie": "Aleksandra", "nazwisko": "Gajewska", "partia": "KO"},
+      {"imie": "Wojciech", "nazwisko": "Skurkiewicz", "partia": "KO"},
+      {"imie": "Paulina", "nazwisko": "Hennig-Kloska", "partia": "Polska2050"}
+    ]
+  },
+  "21": {
+    "okreg": "Opole I",
+    "kody_pocztowe": ["45-001", "45-002", "45-003", "45-004", "45-005", "45-006", "45-007", "45-008", "45-009", "45-010"],
+    "poslowie": [
+      {"imie": "Tomasz", "nazwisko": "Kostuś", "partia": "KO"},
+      {"imie": "Kordian", "nazwisko": "Kolbiarz", "partia": "PiS"},
+      {"imie": "Sebastian", "nazwisko": "Łukaszewicz", "partia": "PiS"}
+    ]
+  },
+  "22": {
+    "okreg": "Krosno II",
+    "kody_pocztowe": ["38-400", "36-200", "38-500", "39-100", "39-200", "39-300", "39-400", "39-500"],
+    "poslowie": [
+      {"imie": "Anna", "nazwisko": "Schmidt", "partia": "PiS"},
+      {"imie": "Piotr", "nazwisko": "Babinetz", "partia": "PiS"},
+      {"imie": "Teresa", "nazwisko": "Pamuła", "partia": "PiS"}
+    ]
+  },
+  "23": {
+    "okreg": "Rzeszów I",
+    "kody_pocztowe": ["35-001", "35-002", "35-003", "35-004", "35-005", "35-006", "35-007", "35-008", "35-009", "35-010"],
+    "poslowie": [
+      {"imie": "Ewa", "nazwisko": "Leniart", "partia": "PiS"},
+      {"imie": "Bogdan", "nazwisko": "Rzońca", "partia": "PiS"},
+      {"imie": "Stanisław", "nazwisko": "Tyszka", "partia": "Konfederacja"},
+      {"imie": "Marcin", "nazwisko": "Warchoł", "partia": "PiS"}
+    ]
+  },
+  "24": {
+    "okreg": "Białystok I",
+    "kody_pocztowe": ["15-001", "15-002", "15-003", "15-004", "15-005", "15-006", "15-007", "15-008", "15-009", "15-010"],
+    "poslowie": [
+      {"imie": "Krzysztof", "nazwisko": "Truskolaski", "partia": "KO"},
+      {"imie": "Dariusz", "nazwisko": "Piontkowski", "partia": "PiS"},
+      {"imie": "Bernadeta", "nazwisko": "Krynicka", "partia": "PiS"},
+      {"imie": "Jacek", "nazwisko": "Żalek", "partia": "PiS"}
+    ]
+  },
+  "25": {
+    "okreg": "Gdańsk I",
+    "kody_pocztowe": ["80-001", "80-002", "80-003", "80-004", "80-005", "80-006", "80-007", "80-008", "80-009", "80-010"],
+    "poslowie": [
+      {"imie": "Donald", "nazwisko": "Tusk", "partia": "KO"},
+      {"imie": "Janusz", "nazwisko": "Cichoń", "partia": "KO"},
+      {"imie": "Sławomir", "nazwisko": "Mentzen", "partia": "Konfederacja"},
+      {"imie": "Kacper", "nazwisko": "Płażyński", "partia": "PiS"}
+    ]
+  },
+  "26": {
+    "okreg": "Gdynia II",
+    "kody_pocztowe": ["81-001", "81-002", "81-003", "81-004", "81-005", "81-006", "81-007", "81-008", "81-009", "81-010"],
+    "poslowie": [
+      {"imie": "Arkadiusz", "nazwisko": "Marchewka", "partia": "KO"},
+      {"imie": "Magdalena", "nazwisko": "Biejat", "partia": "Lewica"},
+      {"imie": "Kazimierz", "nazwisko": "Smoliński", "partia": "PiS"},
+      {"imie": "Piotr", "nazwisko": "Müller", "partia": "PiS"}
+    ]
+  },
+  "27": {
+    "okreg": "Bielsko-Biała I",
+    "kody_pocztowe": ["43-300", "43-301", "43-302", "43-303", "43-304", "43-305", "43-306", "43-307", "43-308", "43-309"],
+    "poslowie": [
+      {"imie": "Jarosław", "nazwisko": "Gowin", "partia": "Niezależny"},
+      {"imie": "Marek", "nazwisko": "Ast", "partia": "PiS"},
+      {"imie": "Józef", "nazwisko": "Brynkus", "partia": "PiS"},
+      {"imie": "Grzegorz", "nazwisko": "Tobiszowski", "partia": "PiS"}
+    ]
+  },
+  "28": {
+    "okreg": "Częstochowa II",
+    "kody_pocztowe": ["42-200", "42-201", "42-202", "42-203", "42-204", "42-205", "42-206", "42-207", "42-208", "42-209"],
+    "poslowie": [
+      {"imie": "Krzysztof", "nazwisko": "Gadowski", "partia": "Konfederacja"},
+      {"imie": "Arkadiusz", "nazwisko": "Mularczyk", "partia": "PiS"},
+      {"imie": "Ewa", "nazwisko": "Malik", "partia": "PiS"},
+      {"imie": "Zbigniew", "nazwisko": "Bogucki", "partia": "PiS"}
+    ]
+  },
+  "29": {
+    "okreg": "Gliwice I",
+    "kody_pocztowe": ["44-100", "44-101", "44-102", "44-103", "44-104", "44-105", "44-106", "44-107", "44-108", "44-109"],
+    "poslowie": [
+      {"imie": "Małgorzata", "nazwisko": "Tracz", "partia": "KO"},
+      {"imie": "Adam", "nazwisko": "Szłapka", "partia": "KO"},
+      {"imie": "Wojciech", "nazwisko": "Murdzek", "partia": "PiS"},
+      {"imie": "Ewa", "nazwisko": "Kozanecka", "partia": "PiS"}
+    ]
+  },
+  "30": {
+    "okreg": "Rybnik II",
+    "kody_pocztowe": ["44-200", "44-201", "44-202", "44-203", "44-204", "44-205", "44-206", "44-207", "44-208", "44-209"],
+    "poslowie": [
+      {"imie": "Ewa", "nazwisko": "Kozanecka", "partia": "PiS"},
+      {"imie": "Grzegorz", "nazwisko": "Tobiszowski", "partia": "PiS"},
+      {"imie": "Adam", "nazwisko": "Gomoła", "partia": "Lewica"}
+    ]
+  },
+  "31": {
+    "okreg": "Katowice I",
+    "kody_pocztowe": ["40-001", "40-002", "40-003", "40-004", "40-005", "40-006", "40-007", "40-008", "40-009", "40-010"],
+    "poslowie": [
+      {"imie": "Barbara", "nazwisko": "Nowacka", "partia": "KO"},
+      {"imie": "Marcin", "nazwisko": "Krupa", "partia": "KO"},
+      {"imie": "Łukasz", "nazwisko": "Mejza", "partia": "PiS"},
+      {"imie": "Wojciech", "nazwisko": "Saługa", "partia": "Lewica"}
+    ]
+  },
+  "32": {
+    "okreg": "Sosnowiec II",
+    "kody_pocztowe": ["41-200", "41-201", "41-202", "41-203", "41-204", "41-205", "41-206", "41-207", "41-208", "41-209"],
+    "poslowie": [
+      {"imie": "Monika", "nazwisko": "Rosa", "partia": "KO"},
+      {"imie": "Gabriela", "nazwisko": "Lenartowicz", "partia": "KO"},
+      {"imie": "Zbigniew", "nazwisko": "Hoffman", "partia": "PiS"}
+    ]
+  },
+  "33": {
+    "okreg": "Kielce I",
+    "kody_pocztowe": ["25-001", "25-002", "25-003", "25-004", "25-005", "25-006", "25-007", "25-008", "25-009", "25-010"],
+    "poslowie": [
+      {"imie": "Maciej", "nazwisko": "Małecki", "partia": "PSL"},
+      {"imie": "Beata", "nazwisko": "Szydło", "partia": "PiS"},
+      {"imie": "Anna", "nazwisko": "Krupka", "partia": "PSL"},
+      {"imie": "Jarosław", "nazwisko": "Gugała", "partia": "PiS"}
+    ]
+  },
+  "34": {
+    "okreg": "Elbląg II",
+    "kody_pocztowe": ["82-300", "82-400", "82-500", "82-600", "14-100", "14-200", "14-300", "14-400", "14-500"],
+    "poslowie": [
+      {"imie": "Jerzy", "nazwisko": "Wilk", "partia": "PiS"},
+      {"imie": "Jacek", "nazwisko": "Protas", "partia": "PiS"},
+      {"imie": "Edmund", "nazwisko": "Bojanowski", "partia": "KO"}
+    ]
+  },
+  "35": {
+    "okreg": "Olsztyn I",
+    "kody_pocztowe": ["10-001", "10-002", "10-003", "10-004", "10-005", "10-006", "10-007", "10-008", "10-009", "10-010"],
+    "poslowie": [
+      {"imie": "Robert", "nazwisko": "Tyszkiewicz", "partia": "KO"},
+      {"imie": "Jacek", "nazwisko": "Protas", "partia": "PiS"},
+      {"imie": "Wojciech", "nazwisko": "Maksymowicz", "partia": "Lewica"},
+      {"imie": "Iwona", "nazwisko": "Arent", "partia": "KO"}
+    ]
+  },
+  "36": {
+    "okreg": "Kalisz I",
+    "kody_pocztowe": ["62-800", "62-801", "62-802", "62-803", "62-804", "62-805", "62-806", "62-807", "62-808", "62-809"],
+    "poslowie": [
+      {"imie": "Mariusz", "nazwisko": "Witczak", "partia": "KO"},
+      {"imie": "Krzysztof", "nazwisko": "Kubów", "partia": "PSL"},
+      {"imie": "Mariusz", "nazwisko": "Kałużny", "partia": "PiS"},
+      {"imie": "Waldemar", "nazwisko": "Buda", "partia": "PiS"}
+    ]
+  },
+  "37": {
+    "okreg": "Konin II",
+    "kody_pocztowe": ["62-500", "62-501", "62-502", "62-503", "62-504", "62-505", "62-506", "62-507", "62-508", "62-509"],
+    "poslowie": [
+      {"imie": "Paweł", "nazwisko": "Kowal", "partia": "Polska2050"},
+      {"imie": "Bartłomiej", "nazwisko": "Wróblewski", "partia": "KO"},
+      {"imie": "Zbigniew", "nazwisko": "Hoffmann", "partia": "PiS"},
+      {"imie": "Marcin", "nazwisko": "Porzucek", "partia": "PiS"}
+    ]
+  },
+  "38": {
+    "okreg": "Piła I",
+    "kody_pocztowe": ["64-920", "64-930", "64-940", "64-950", "64-960", "64-970", "64-980", "64-990", "67-100", "67-200"],
+    "poslowie": [
+      {"imie": "Bartosz", "nazwisko": "Arłukowicz", "partia": "KO"},
+      {"imie": "Paweł", "nazwisko": "Zalewski", "partia": "KO"},
+      {"imie": "Radosław", "nazwisko": "Fogiel", "partia": "PiS"},
+      {"imie": "Lech", "nazwisko": "Kołakowski", "partia": "PiS"}
+    ]
+  },
+  "39": {
+    "okreg": "Poznań I",
+    "kody_pocztowe": ["60-001", "60-002", "60-003", "60-004", "60-005", "60-006", "60-007", "60-008", "60-009", "60-010"],
+    "poslowie": [
+      {"imie": "Tomasz", "nazwisko": "Frankowski", "partia": "KO"},
+      {"imie": "Bartosz", "nazwisko": "Arłukowicz", "partia": "KO"},
+      {"imie": "Lidia", "nazwisko": "Staroń", "partia": "Lewica"},
+      {"imie": "Paulina", "nazwisko": "Matysiak", "partia": "Lewica"},
+      {"imie": "Jacek", "nazwisko": "Żalek", "partia": "PiS"},
+      {"imie": "Mariusz", "nazwisko": "Kałużny", "partia": "PiS"}
+    ]
+  },
+  "40": {
+    "okreg": "Koszalin II",
+    "kody_pocztowe": ["75-001", "75-002", "75-003", "75-004", "75-005", "75-006", "75-007", "75-008", "75-009", "75-010"],
+    "poslowie": [
+      {"imie": "Arkadiusz", "nazwisko": "Marchewka", "partia": "KO"},
+      {"imie": "Urszula", "nazwisko": "Pasławska", "partia": "KO"},
+      {"imie": "Mirosława", "nazwisko": "Stachowiak-Różecka", "partia": "PiS"},
+      {"imie": "Leszek", "nazwisko": "Dobrzyński", "partia": "PiS"}
+    ]
+  },
+  "41": {
+    "okreg": "Szczecin I",
+    "kody_pocztowe": ["70-001", "70-002", "70-003", "70-004", "70-005", "70-006", "70-007", "70-008", "70-009", "70-010"],
+    "poslowie": [
+      {"imie": "Barbara", "nazwisko": "Dolniak", "partia": "KO"},
+      {"imie": "Dariusz", "nazwisko": "Młynarski", "partia": "KO"},
+      {"imie": "Leszek", "nazwisko": "Dobrzyński", "partia": "PiS"},
+      {"imie": "Małgorzata", "nazwisko": "Jacyna-Witt", "partia": "PiS"},
+      {"imie": "Krzysztof", "nazwisko": "Bosak", "partia": "Konfederacja"}
+    ]
+  }
+}
