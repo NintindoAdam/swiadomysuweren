@@ -3,6 +3,11 @@ const postalCodeInput = document.getElementById('postalCode');
 const searchBtn = document.getElementById('searchBtn');
 const resultsDiv = document.getElementById('results');
 
+// Funkcja do normalizacji kodu pocztowego (usuwa spacje, myślniki, zamienia na wielkie litery)
+function normalizePostalCode(code) {
+    return code.replace(/\s|-/g, '').toUpperCase();
+}
+
 // Funkcja do wyszukiwania posłów po kodzie pocztowym
 async function searchDeputies() {
     const code = postalCodeInput.value.trim();
@@ -18,9 +23,11 @@ async function searchDeputies() {
 
         // Szukanie okręgu zawierającego kod pocztowy
         let found = false;
+        const normalizedInput = normalizePostalCode(code);
         for (const okregId in data) {
             const okreg = data[okregId];
-            if (okreg.kody_pocztowe.includes(code)) {
+            // Sprawdź każdy kod pocztowy po normalizacji
+            if (okreg.kody_pocztowe.some(kod => normalizePostalCode(kod) === normalizedInput)) {
                 found = true;
                 displayResults(okreg);
                 break;
