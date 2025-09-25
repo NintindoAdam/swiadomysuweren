@@ -8,6 +8,35 @@ function normalizePostalCode(code) {
     return code.replace(/\s|-/g, '').toUpperCase();
 }
 
+// Funkcja sprawdzająca, czy kod pocztowy pasuje do prefixu lub zakresu
+function isPostalCodeInDistrict(code, kody_pocztowe) {
+    const normalized = code.replace(/\s|-/g, '').toUpperCase();
+
+    // Sprawdź prefixy
+    if (Array.isArray(kody_pocztowe.prefixy)) {
+        for (const prefix of kody_pocztowe.prefixy) {
+            if (normalized.startsWith(prefix.replace('-', ''))) {
+                return true;
+            }
+        }
+    }
+
+    // Sprawdź zakresy
+    if (Array.isArray(kody_pocztowe.zakresy)) {
+        for (const zakres of kody_pocztowe.zakresy) {
+            // Zamień na liczby do porównania
+            const od = zakres.od.replace(/\D/g, '');
+            const do_ = zakres.do.replace(/\D/g, '');
+            const kodNum = normalized.replace(/\D/g, '');
+            if (kodNum >= od && kodNum <= do_) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
 // Funkcja do wyszukiwania posłów po kodzie pocztowym
 async function searchDeputies() {
     const code = postalCodeInput.value.trim();
@@ -20,29 +49,14 @@ async function searchDeputies() {
         const response = await fetch('poslowie.json');
         const data = await response.json();
 
-        const normalizedInput = normalizePostalCode(code);
         let found = false;
-
-        // Debug: pokaż wpisany kod i wszystkie kody z JSON
-        console.log("Wpisany kod:", code, "Znormalizowany:", normalizedInput);
-
-        let anyCodes = false;
         for (const okregId in data) {
             const okreg = data[okregId];
-            if (Array.isArray(okreg.kody_pocztowe)) {
-                anyCodes = true;
-                console.log("Okręg:", okreg.okreg, "Kody:", okreg.kody_pocztowe);
-                if (okreg.kody_pocztowe.some(kod => normalizePostalCode(kod) === normalizedInput)) {
-                    found = true;
-                    displayResults(okreg);
-                    break;
-                }
+            if (okreg.kody_pocztowe && isPostalCodeInDistrict(code, okreg.kody_pocztowe)) {
+                found = true;
+                displayResults(okreg);
+                break;
             }
-        }
-
-        if (!anyCodes) {
-            resultsDiv.innerHTML = `<p>Brak kodów pocztowych w danych JSON.</p>`;
-            return;
         }
 
         if (!found) {
