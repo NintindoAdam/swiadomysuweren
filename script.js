@@ -17,21 +17,32 @@ async function searchDeputies() {
     }
 
     try {
-        // Pobranie danych z pliku JSON
         const response = await fetch('poslowie.json');
         const data = await response.json();
 
-        // Szukanie okręgu zawierającego kod pocztowy
-        let found = false;
         const normalizedInput = normalizePostalCode(code);
+        let found = false;
+
+        // Debug: pokaż wpisany kod i wszystkie kody z JSON
+        console.log("Wpisany kod:", code, "Znormalizowany:", normalizedInput);
+
+        let anyCodes = false;
         for (const okregId in data) {
             const okreg = data[okregId];
-            // Sprawdź każdy kod pocztowy po normalizacji
-            if (okreg.kody_pocztowe.some(kod => normalizePostalCode(kod) === normalizedInput)) {
-                found = true;
-                displayResults(okreg);
-                break;
+            if (Array.isArray(okreg.kody_pocztowe)) {
+                anyCodes = true;
+                console.log("Okręg:", okreg.okreg, "Kody:", okreg.kody_pocztowe);
+                if (okreg.kody_pocztowe.some(kod => normalizePostalCode(kod) === normalizedInput)) {
+                    found = true;
+                    displayResults(okreg);
+                    break;
+                }
             }
+        }
+
+        if (!anyCodes) {
+            resultsDiv.innerHTML = `<p>Brak kodów pocztowych w danych JSON.</p>`;
+            return;
         }
 
         if (!found) {
