@@ -147,20 +147,19 @@
     "67-370", "67-371", "67-372", "67-373", "67-374", "67-375", "67-376", "67-377", "67-378", "67-379",
     "67-380", "67-381", "67-382", "67-383", "67-384", "67-385", "67-386", "67-387", "67-388", "67-389",
     "67-390", "67-391", "67-392", "67-393", "67-394", "67-395", "67-396", "67-397", "67-398", "67-399"
+  ],
+  "poslowie": [
+    { "imie": "Robert", "nazwisko": "Obaz", "partia": "KO" },
+    { "imie": "Krzysztof", "nazwisko": "Mieszkowski", "partia": "KO" },
+    { "imie": "Michał", "nazwisko": "Dworczyk", "partia": "PiS" },
+    { "imie": "Arkadiusz", "nazwisko": "Czartoryski", "partia": "PiS" },
+    { "imie": "Marek", "nazwisko": "Ast", "partia": "PiS" },
+    { "imie": "Jacek", "nazwisko": "Żalek", "partia": "PiS" },
+    { "imie": "Anna", "nazwisko": "Zalewska", "partia": "PiS" },
+    { "imie": "Waldemar", "nazwisko": "Buda", "partia": "PiS" },
+    { "imie": "Ewa", "nazwisko": "Leniart", "partia": "PiS" },
+    { "imie": "Mieczysław", "nazwisko": "Golba", "partia": "PiS" },
+    { "imie": "Sylwester", "nazwisko": "Tułajew", "partia": "Lewica" },
+    { "imie": "Grzegorz", "nazwisko": "Braun", "partia": "Konfederacja" }
   ]
-    },
-    "poslowie": [
-      { "imie": "Robert", "nazwisko": "Obaz", "partia": "KO" },
-      { "imie": "Krzysztof", "nazwisko": "Mieszkowski", "partia": "KO" },
-      { "imie": "Michał", "nazwisko": "Dworczyk", "partia": "PiS" },
-      { "imie": "Arkadiusz", "nazwisko": "Czartoryski", "partia": "PiS" },
-      { "imie": "Marek", "nazwisko": "Ast", "partia": "PiS" },
-      { "imie": "Jacek", "nazwisko": "Żalek", "partia": "PiS" },
-      { "imie": "Anna", "nazwisko": "Zalewska", "partia": "PiS" },
-      { "imie": "Waldemar", "nazwisko": "Buda", "partia": "PiS" },
-      { "imie": "Ewa", "nazwisko": "Leniart", "partia": "PiS" },
-      { "imie": "Mieczysław", "nazwisko": "Golba", "partia": "PiS" },
-      { "imie": "Sylwester", "nazwisko": "Tułajew", "partia": "Lewica" },
-      { "imie": "Grzegorz", "nazwisko": "Braun", "partia": "Konfederacja" }
-    ]
-  }
+}
