@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posłowie 10. kadencji</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Wyszukiwarka posłów</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Sprawdź swoich posłów</h1>
-        <input type="text" id="postalCode" placeholder="XX-XXX">
-        <button id="searchBtn">Szukaj</button>
-        <div id="results"></div>
-    </div>
-    <script src="script.js"></script>
+  <h1>Sprawdź swoich posłów</h1>
+  <input type="text" id="kodInput" placeholder="Wpisz kod pocztowy">
+  <button onclick="sprawdzKod()">Szukaj</button>
+  <div id="wynik"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>

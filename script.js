@@ -1,68 +1,37 @@
-// Pobranie elementów z DOM
-const postalCodeInput = document.getElementById('postalCode');
-const searchBtn = document.getElementById('searchBtn');
-const resultsDiv = document.getElementById('results');
+let data = null;
 
-// Funkcja do normalizacji kodu pocztowego (usuwa spacje, myślniki, zamienia na wielkie litery)
-function normalizePostalCode(code) {
-    return code.replace(/\s|-/g, '').toUpperCase();
-}
+// Ładowanie JSON-a
+fetch("data.json")
+  .then(response => response.json())
+  .then(json => {
+    data = json;
+    console.log("Dane załadowane:", data);
+  })
+  .catch(error => {
+    console.error("Błąd wczytywania JSON:", error);
+  });
 
-// Funkcja sprawdzająca, czy kod pocztowy znajduje się w tablicy kodów
-function isPostalCodeInDistrict(code, kody_pocztowe) {
-    // Zamień kod na format XX-XXX
-    let formattedCode = code.replace(/\s|-/g, '');
-    if (formattedCode.length === 5) {
-        formattedCode = formattedCode.substring(0,2) + '-' + formattedCode.substring(2);
-    }
-    return kody_pocztowe.includes(formattedCode);
-}
+// Funkcja wyszukiwania
+function sprawdzKod() {
+  const input = document.getElementById("kodInput").value.trim();
+  const wynikDiv = document.getElementById("wynik");
 
-// Funkcja do wyszukiwania posłów po kodzie pocztowym
-async function searchDeputies() {
-    const code = postalCodeInput.value.trim();
-    if (!code) {
-        resultsDiv.innerHTML = "<p>Proszę wpisać kod pocztowy.</p>";
-        return;
-    }
+  wynikDiv.innerHTML = ""; // czyścimy poprzedni wynik
 
-    try {
-        const response = await fetch('poslowie.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
+  if (!data) {
+    wynikDiv.textContent = "Dane jeszcze się ładują...";
+    return;
+  }
 
-        // Sprawdź, czy kod pocztowy znajduje się w tablicy
-        if (isPostalCodeInDistrict(code, data.kody_pocztowe)) {
-            displayResults(data);
-        } else {
-            resultsDiv.innerHTML = `<p>Nie znaleziono posłów dla kodu: ${code}</p>`;
-        }
-    } catch (error) {
-        console.error('Błąd przy pobieraniu danych:', error);
-        resultsDiv.innerHTML = `<p>Wystąpił błąd przy pobieraniu danych: ${error.message}</p>`;
-    }
-}
-
-// Funkcja do wyświetlania wyników
-function displayResults(data) {
-    let html = `<h2>Okręg: ${data.okreg_wyborczy.siedziba} (${data.okreg_wyborczy.wojewodztwo})</h2>`;
-    html += `<p>${data.okreg_wyborczy.opis}</p>`;
-    html += "<ul>";
+  if (data.kody_pocztowe.includes(input)) {
+    const lista = document.createElement("ul");
     data.poslowie.forEach(posel => {
-        html += `<li>${posel.imie} ${posel.nazwisko} (${posel.partia})</li>`;
+      const li = document.createElement("li");
+      li.textContent = `${posel.imie} ${posel.nazwisko} (${posel.partia})`;
+      lista.appendChild(li);
     });
-    html += "</ul>";
-    resultsDiv.innerHTML = html;
+    wynikDiv.appendChild(lista);
+  } else {
+    wynikDiv.textContent = "Podany kod pocztowy nie należy do tego okręgu wyborczego.";
+  }
 }
-
-// Obsługa kliknięcia przycisku
-searchBtn.addEventListener('click', searchDeputies);
-
-// Obsługa Enter w inpucie
-postalCodeInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-        searchDeputies();
-    }
-});
