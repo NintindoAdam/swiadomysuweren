@@ -8,36 +8,14 @@ function normalizePostalCode(code) {
     return code.replace(/\s|-/g, '').toUpperCase();
 }
 
-// Funkcja sprawdzająca, czy kod pocztowy pasuje do prefixu lub zakresu
+// Funkcja sprawdzająca, czy kod pocztowy znajduje się w tablicy kodów
 function isPostalCodeInDistrict(code, kody_pocztowe) {
-    // Zamień kod na format bez spacji i wielkie litery
-    const normalized = code.replace(/\s/g, '').toUpperCase();
-
-    // Sprawdź prefixy (porównaj pierwsze dwie cyfry kodu)
-    if (Array.isArray(kody_pocztowe.prefixy)) {
-        const codePrefix = normalized.substring(0, 2);
-        for (const prefix of kody_pocztowe.prefixy) {
-            if (codePrefix === prefix) {
-                return true;
-            }
-        }
+    // Zamień kod na format XX-XXX
+    let formattedCode = code.replace(/\s|-/g, '');
+    if (formattedCode.length === 5) {
+        formattedCode = formattedCode.substring(0,2) + '-' + formattedCode.substring(2);
     }
-
-    // Sprawdź zakresy (porównaj pełny kod XX-XXX)
-    if (Array.isArray(kody_pocztowe.zakresy)) {
-        // Zamień kod na format XX-XXX (jeśli wpisano bez myślnika)
-        let formattedCode = normalized;
-        if (formattedCode.length === 5 && !formattedCode.includes('-')) {
-            formattedCode = formattedCode.substring(0,2) + '-' + formattedCode.substring(2);
-        }
-        for (const zakres of kody_pocztowe.zakresy) {
-            if (formattedCode >= zakres.od && formattedCode <= zakres.do) {
-                return true;
-            }
-        }
-    }
-
-    return false;
+    return kody_pocztowe.includes(formattedCode);
 }
 
 // Funkcja do wyszukiwania posłów po kodzie pocztowym
@@ -52,17 +30,10 @@ async function searchDeputies() {
         const response = await fetch('poslowie.json');
         const data = await response.json();
 
-        let found = false;
-        for (const okregId in data) {
-            const okreg = data[okregId];
-            if (okreg.kody_pocztowe && isPostalCodeInDistrict(code, okreg.kody_pocztowe)) {
-                found = true;
-                displayResults(okreg);
-                break;
-            }
-        }
-
-        if (!found) {
+        // Sprawdź, czy kod pocztowy znajduje się w tablicy
+        if (isPostalCodeInDistrict(code, data.kody_pocztowe)) {
+            displayResults(data);
+        } else {
             resultsDiv.innerHTML = `<p>Nie znaleziono posłów dla kodu: ${code}</p>`;
         }
     } catch (error) {
@@ -72,10 +43,11 @@ async function searchDeputies() {
 }
 
 // Funkcja do wyświetlania wyników
-function displayResults(okreg) {
-    let html = `<h2>Okręg: ${okreg.okreg}</h2>`;
+function displayResults(data) {
+    let html = `<h2>Okręg: ${data.okreg_wyborczy.siedziba} (${data.okreg_wyborczy.wojewodztwo})</h2>`;
+    html += `<p>${data.okreg_wyborczy.opis}</p>`;
     html += "<ul>";
-    okreg.poslowie.forEach(posel => {
+    data.poslowie.forEach(posel => {
         html += `<li>${posel.imie} ${posel.nazwisko} (${posel.partia})</li>`;
     });
     html += "</ul>";
