@@ -28,6 +28,9 @@ async function searchDeputies() {
 
     try {
         const response = await fetch('poslowie.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const data = await response.json();
 
         // Sprawdź, czy kod pocztowy znajduje się w tablicy
@@ -38,7 +41,7 @@ async function searchDeputies() {
         }
     } catch (error) {
         console.error('Błąd przy pobieraniu danych:', error);
-        resultsDiv.innerHTML = "<p>Wystąpił błąd przy pobieraniu danych.</p>";
+        resultsDiv.innerHTML = `<p>Wystąpił błąd przy pobieraniu danych: ${error.message}</p>`;
     }
 }
 
